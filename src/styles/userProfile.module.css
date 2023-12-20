@@ -1,0 +1,35 @@
+.userProfileContent {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.userDetails {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.userDetails_name,
+.userDetails_content {
+  width: 100%;
+}
+.userDetails_content {
+  padding-inline: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.userDetails_content img {
+  height: 500px;
+  border-radius: 10%;
+}
+.userDetails_more {
+  line-height: 1rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}

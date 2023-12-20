@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -6,7 +7,7 @@ import UserProfile from "./components/UserProfile";
 
 const App = () => {
   return (
-    <div>
+    <div className="appContainer">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />

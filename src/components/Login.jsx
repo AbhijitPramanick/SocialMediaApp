@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import styles from "../styles/login.module.css";
 const Login = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -29,9 +30,9 @@ const Login = () => {
     }
   };
   return (
-    <div>
-      <h1>Login</h1>
-      <form action="#" onSubmit={handleClick}>
+    <div className={styles.loginDiv}>
+      <h1 className={styles.loginDiv_heading}>Login</h1>
+      <form action="#" onSubmit={handleClick} className={styles.loginDiv_form}>
         <div>
           <label htmlFor="userEmail">Email:</label>
           <input
@@ -52,7 +53,9 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" className={styles.loginDiv_form_button}>
+          Login
+        </button>
       </form>
     </div>
   );
